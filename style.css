@@ -54,6 +54,10 @@ body {
     background-color: var(--enter);
 }
 
+.clear-button {
+    background-color: var(--calc);
+}
+
 
 button {
     height: 75px;
