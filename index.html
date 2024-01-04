@@ -10,28 +10,27 @@
     
     <div id="main-container">
         <div id="text-container">
-            <div id="output"></div>
+            <input id="output" readonly>
         </div>
 
         <div id="grid-container">
-            <button onclick="clear();" class="clear-button">C</button>
-            <button class="calc-button">%</button>
-            <button class="calc-button">&divide</button>
-            <button class="calc-button" id="times">&times</button>
-            <button class="number-button">7</button>
-            <button class="number-button">8</button>
-            <button class="number-button">9</button>
-            <button class="calc-button">-</button>
-            <button class="number-button">4</button>
-            <button class="number-button">5</button>
-            <button class="number-button">6</button>
-            <button class="calc-button">+</button>
-            <button class="number-button">1</button>
-            <button class="number-button">2</button>
-            <button class="number-button">3</button>
-            <button class="enter-button" style="height: 160px;" onclick="calc();">=</button>
-            <button class="number-button" style="width: 160px; margin-top:-80px; text-align:left; padding-left:30px;">0</button>
-            <button class="number-button" style="margin-top:-80px">,</button>
+            <button onclick="clearOutput();"          class="clear-button" style="width: 160px; text-align:left; padding-left:30px;">C</button>
+            <button onclick="addToOutput('/');" class="calc-button">&divide</button>
+            <button onclick="addToOutput('*');" class="calc-button" id="times">&times</button>
+            <button onclick="addToOutput('7');" class="number-button">7</button>
+            <button onclick="addToOutput('8');" class="number-button">8</button>
+            <button onclick="addToOutput('9');" class="number-button">9</button>
+            <button onclick="addToOutput('-');" class="calc-button">-</button>
+            <button onclick="addToOutput('4');" class="number-button">4</button>
+            <button onclick="addToOutput('5');" class="number-button">5</button>
+            <button onclick="addToOutput('6');" class="number-button">6</button>
+            <button onclick="addToOutput('+');" class="calc-button">+</button>
+            <button onclick="addToOutput('1');" class="number-button">1</button>
+            <button onclick="addToOutput('2');" class="number-button">2</button>
+            <button onclick="addToOutput('3');" class="number-button">3</button>
+            <button onclick="calc();"           class="enter-button" style="height: 160px;">=</button>
+            <button onclick="addToOutput('0');" class="number-button" style="width: 160px; margin-top:-80px; text-align:left; padding-left:30px;">0</button>
+            <button onclick="addToOutput('.');" class="number-button" style="margin-top:-80px">.</button>
         </div>
     </div>
 

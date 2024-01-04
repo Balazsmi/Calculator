@@ -1,54 +1,17 @@
-var number_buttons = document.querySelectorAll(".number-button");
-var calc_buttons = document.querySelectorAll(".calc-button");
-var clear_buttons = document.querySelectorAll(".clear-button");
-var operation = '';
-var x = '';
-var y = '';
+const output = document.getElementById('output');
 
-number_buttons.forEach(function(button) {
-    button.addEventListener("click", function(event) {
-      var innerHTMLValue = event.target.innerHTML;
-      console.log(innerHTMLValue);
-      x = x + innerHTMLValue;
-      document.getElementById('output').innerHTML = x;
-    });
-});
+function addToOutput(input) {
+    output.value += input;
+}
 
-calc_buttons.forEach(function(button) {
-    button.addEventListener("click", function(event) {
-      var innerHTMLValue = event.target.innerHTML;
-      console.log(innerHTMLValue);
-      y = y + x;
-      x = '';
-      operation = innerHTMLValue;
-    });
-});
-
-clear_buttons.forEach(function(button) {
-    button.addEventListener("click", function(event) {
-      var innerHTMLValue = event.target.innerHTML;
-      console.log(innerHTMLValue);
-      document.getElementById('output').innerHTML = null;
-      console.log('clear');
-    });
-});
+function clearOutput() {
+    output.value = '';
+}
 
 function calc() {
-    var num = 0;
-    console.log(x);
-    console.log(y);
-    if (operation == '+') {
-        num = parseInt(y) + parseInt(x);
-    } else if (operation == '-') {
-        num = parseInt(y) - parseInt(x);
-    } else if (operation == document.getElementById('times').innerHTML) {
-        num = parseInt(x) * parseInt(y);
-    } else {
-        num = parseInt(y) / parseInt(x);
+    try {
+        output.value = eval(output.value);
+    } catch (e) {
+        output.value = 'Error';
     }
-
-    console.log(num);
-    document.getElementById('output').innerHTML = num;
-    x = '';
-    y = '';
 }
