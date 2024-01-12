@@ -1,4 +1,5 @@
-![Screenshot 2024-01-12 170712](https://github.com/Balazsmi/Calculator/assets/81588599/0e13d23f-2b01-4ef4-830d-5b4c21d4769f)
+# Calculator
+![Screenshot 2024-01-12 221347](https://github.com/Balazsmi/Calculator/assets/81588599/0d359499-157d-4639-a2c0-4d67c880fdac)
 
 A simple calculator you can try [here](https://balazsmi.github.io/Calculator/)
 
