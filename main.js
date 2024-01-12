@@ -15,3 +15,7 @@ function calc() {
         output.value = 'Error';
     }
 }
+
+function deleteChar() {
+    output.value = output.value.slice(0, -1);
+}

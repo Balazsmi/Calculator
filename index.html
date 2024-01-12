@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/7228fdaa38.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     
+    <div id="heading">
+        <i id="icon" class="fa-solid fa-calculator"></i>
+        <label id="title">Calculator</>
+    </div>
     <div id="main-container">
         <div id="text-container">
             <input id="output" readonly>
         </div>
 
         <div id="grid-container">
-            <button onclick="clearOutput();"    class="clear-button" style="width: 160px; text-align:left; padding-left:30px;">C</button>
+            <button onclick="clearOutput();"    class="clear-button">C</button>
+            <button onclick="deleteChar();"      class="delete-button"><i id="deleteIcon" class="fa-solid fa-delete-left"></i></button>
             <button onclick="addToOutput('/');" class="calc-button">&divide</button>
             <button onclick="addToOutput('*');" class="calc-button" id="times">&times</button>
             <button onclick="addToOutput('7');" class="number-button">7</button>

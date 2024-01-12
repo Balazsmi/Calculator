@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 :root {
     --background: black;
     --number: #28282a;
@@ -9,7 +12,7 @@ body {
     background-color: black;
     display: grid;
     place-items: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 #main-container {
@@ -43,6 +46,7 @@ body {
     background-color: black;
     border: none;
     border-radius: 25px;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 #output:focus {
@@ -86,6 +90,10 @@ body {
     background-color: var(--calc);
 }
 
+.delete-button {
+    background-color: var(--calc);
+}
+
 
 button {
     height: 75px;
@@ -97,6 +105,7 @@ button {
     color: white;
     cursor: pointer;
     user-select: none;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 button:hover {
@@ -105,4 +114,30 @@ button:hover {
 
 button:active {
     background-color: hsl(0,0%, 40%);
+}
+
+
+#icon {
+    color: white;
+    scale: 2.5;
+}
+
+#heading {
+    position: absolute;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    top: 30px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-size: 30px;
+    margin-left: 25px;
+    color: var(--white);
+}
+
+#deleteIcon {
+    scale: 0.75;
 }
