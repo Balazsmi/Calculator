@@ -1,15 +1,7 @@
 :root {
-    --background: #161616;
+    --background: black;
     --number: #28282a;
     --calc: #1a1a1a;
-    --enter: hsl(29, 94%, 50%);
-    --purple: #c134dd;
-    --blue: #43aaff;
-    --orange: #fd8945;
-    --themeColor: #ffffff;
-    --yellow: #ffd843;
-    --red: #ff4c4c;
-    --green: #00d062;
     --white-clicked: #949494;
 }
 
@@ -79,14 +71,15 @@ body {
 }
 
 .enter-button {
-    background-color: var(--enter);
+    background-color: white;
+    color: black;
 }
 
 .enter-button:hover {
-    background-color: hsl(29, 94%, 60%);
+    background-color: hsl(0, 0%, 81%);
 }
 .enter-button:active {
-    background-color: hsl(29, 94%, 65%);
+    background-color: hsl(0, 0%, 63%);
 }
 
 .clear-button {
